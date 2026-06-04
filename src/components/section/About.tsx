@@ -19,10 +19,10 @@ const About = () => {
   const themeColors = useThemeColors();
 
   const roles = [
-    'Software Engineer',
-    'Full-Stack Developer',
-    'Systems Engineer',
-    'Frontend Developer',
+    'Computer science student',
+    'EHTPist',
+    'Cybersecurity enthusiast',
+    'AI and Data Science lover',
   ];
 
   const profileImages = [
