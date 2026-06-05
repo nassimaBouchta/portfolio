@@ -8,23 +8,24 @@ const Experience = () => {
   const themeColors = useThemeColors();
   const experiences = [
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+      title: "Responsable du développement et partenariat stratégique ",
+      company: "Hassania junior enterprise",
+      location: "casablanca, Morocco",
+      period: "Septembre 2025 - Présent",
       description: [
-        "Description of your role and accomplishments",
+        "Etablissement de partenariats stratégiques avec des entreprises locales et internationales pour favoriser la croissance de l'assosiation et la réalisation et le spnsoring de nos évenements tel que la journée entreprise élève, le Hult Prize, et d'autres évenements ",
       ]
     },
     {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
+      title: "debater at EHTP Great Debaters Club (English section)",
+      company: "EHTP great debaters club",
+      location: "Casablanca, Morocco",
+      period: "Septembre 2025 - Présent",
       description: [
-        "Description of your role and accomplishments",
-        "Another accomplishment or responsibility",
-        "One more key achievement",
+        "L'organisation des évenements au sein du club tel que Hayam et VEE (la Valse des Esprits Eclairés),conception de sujets de débat pertinents et stimulants, et la participation à promouvoir l'excellence en communication et en pensée critique.",
+        "Réussite dans la préparation et la participation à des compétitions de débat interuniversitaires, obtenant des résultats remarquables et renforçant la réputation du club au sein de la communauté académique.",
+        "Organisation de sessions de formation et d'orientation pour des lycéens, visant à améliorer leurs compétences en argumentation, en rhétorique et en prise de parole en public et leur donner  .",
+        ""
       ]
     },
     {
