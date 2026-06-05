@@ -1,72 +1,39 @@
 import { useDarkMode } from '../../contexts/DarkModeContext';
 import { useThemeColors } from '../../hooks/useThemeColors';
-import awsCloudFoundationsBadge from '../../assets/badges/AWS_cloud_foundations_badge.webp';
-import awsCloudPractitionerBadge from '../../assets/badges/AWS_cloud_practitioner_badge.webp';
-import citiLogo from '../../assets/badges/citi_logo.webp';
 
 const Certifications = () => {
   const { isDarkMode } = useDarkMode();
   const themeColors = useThemeColors();
 
-  const badges = [
-    {
-      id: 'aws-cloud-foundations',
-      image: awsCloudFoundationsBadge,
-      alt: 'AWS Academy Cloud Foundations Badge',
-      title: 'AWS Academy Cloud Foundations',
-      subtitle: 'Academy Graduate',
-      credentialUrl: 'https://www.credly.com/badges/your-credential-id/public_url',
-      status: 'completed'
-    },
-    {
-      id: 'aws-cloud-practitioner',
-      image: awsCloudPractitionerBadge,
-      alt: 'AWS Cloud Practitioner Badge',
-      title: 'AWS Certified Cloud Practitioner',
-      subtitle: 'Amazon Web Services',
-      credentialUrl: 'https://www.credly.com/badges/your-credential-id/public_url',
-      status: 'completed'
-    }
-  ];
-
   const credentials = [
     {
-      id: 'citi-human-subjects',
-      image: citiLogo,
-      alt: 'CITI Program Logo',
-      title: 'Social / Behavioral Research Investigator',
-      subtitle: 'Human Subjects Research',
-      issuer: 'CITI Program',
-      issued: 'Sep 2023',
-      expires: 'Sep 2026',
-      credentialId: '00000000',
-      credentialUrl: 'https://www.citiprogram.org/verify/?your-credential-id',
+      id: 'efset-english',
+      alt: 'EFSET English Certificate',
+      title: 'EFSET English Certificate',
+      subtitle: 'C1 Advanced',
+      issuer: 'EF Standard English Test',
+      issued: 'Jun 2025',
+      credentialUrl: '',
       status: 'completed'
     },
     {
-      id: 'citi-hipaa',
-      image: citiLogo,
-      alt: 'CITI Program Logo',
-      title: 'Research and HIPAA Privacy Protections',
-      subtitle: 'Human Research',
-      issuer: 'CITI Program',
-      issued: 'Sep 2023',
-      expires: 'Sep 2026',
-      credentialId: '00000000',
-      credentialUrl: 'https://www.citiprogram.org/verify/?your-credential-id',
+      id: 'sql-basic',
+      alt: 'SQL (Basic) Certificate',
+      title: 'SQL (Basic)',
+      subtitle: 'HackerRank',
+      issuer: 'HackerRank',
+      issued: 'Aug 2025',
+      credentialUrl: 'https://www.hackerrank.com/certificates/139793089e41',
       status: 'completed'
     },
     {
-      id: 'citi-gcp',
-      image: citiLogo,
-      alt: 'CITI Program Logo',
-      title: 'Investigational Drugs and Medical Devices',
-      subtitle: 'Good Clinical Practice',
-      issuer: 'CITI Program',
-      issued: 'Nov 2025',
-      expires: 'Nov 2028',
-      credentialId: '00000000',
-      credentialUrl: 'https://www.citiprogram.org/verify/?your-credential-id',
+      id: 'python-basic',
+      alt: 'Python (Basic) Certificate',
+      title: 'Python (Basic)',
+      subtitle: 'HackerRank',
+      issuer: 'HackerRank',
+      issued: 'Aug 2025',
+      credentialUrl: 'https://www.hackerrank.com/certificates/2e9cc1b345c1',
       status: 'completed'
     }
   ];
@@ -80,73 +47,25 @@ const Certifications = () => {
         <h2 className="text-4xl font-bold text-center mb-6" style={{ color: isDarkMode ? themeColors.colors.white : themeColors.colors.pink[500] }}>Certifications & Credentials</h2>
 
         <div className="max-w-6xl mx-auto">
-          {/* AWS Certifications */}
-          <div className="flex flex-wrap justify-center gap-8 mb-12">
-            {badges.map((badge) => {
-              const BadgeComponent = () => (
-                <div className="flex flex-col items-center group">
-                  <div className="mb-4">
-                    <img
-                      src={badge.image}
-                      alt={badge.alt}
-                      className="w-32 h-32 md:w-40 md:h-40 object-contain transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                      width="160"
-                      height="160"
-                      sizes="(max-width: 768px) 128px, 160px"
-                    />
-                  </div>
-                  <h3 className="text-center text-sm font-medium mb-2" style={{ color: isDarkMode ? themeColors.colors.pink[300] : themeColors.colors.pink[500] }}>
-                    {badge.title}
-                  </h3>
-                  <p className="text-center text-sm" style={{ color: isDarkMode ? themeColors.colors.dark[300] : themeColors.colors.dark[600] }}>
-                    {badge.subtitle || (badge.status === 'in-progress' ? 'In Progress!' : '')}
-                  </p>
-                </div>
-              );
-
-              return badge.credentialUrl ? (
-                <a
-                  key={badge.id}
-                  href={badge.credentialUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block transition-transform duration-300 hover:scale-105 cursor-pointer focus:outline-none"
-                  style={{ outline: 'none' }}
-                  onFocus={(e) => e.currentTarget.blur()}
-                  aria-label={`View ${badge.title} credential`}
-                >
-                  <BadgeComponent />
-                </a>
-              ) : (
-                <div key={badge.id} className="block">
-                  <BadgeComponent />
-                </div>
-              );
-            })}
-          </div>
-
-          {/* CITI Program Certifications */}
           <div className="flex flex-wrap justify-center gap-8">
             {credentials.map((credential) => {
-              const BadgeComponent = () => (
+              const CredentialComponent = () => (
                 <div className="flex flex-col items-center group">
-                  <div className="mb-4">
-                    <img
-                      src={credential.image}
-                      alt={credential.alt}
-                      className="w-32 h-32 md:w-40 md:h-40 object-contain transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                      width="160"
-                      height="160"
-                      sizes="(max-width: 768px) 128px, 160px"
-                    />
+                  <div className="mb-4 w-24 h-24 md:w-32 md:h-32 flex items-center justify-center bg-gradient-to-br from-pink-200 to-pink-100 rounded-lg" style={{
+                    background: isDarkMode ? 'linear-gradient(135deg, rgba(234, 190, 195, 0.2), rgba(234, 190, 195, 0.1))' : 'linear-gradient(135deg, rgba(234, 190, 195, 0.3), rgba(234, 190, 195, 0.2))'
+                  }}>
+                    <span className="text-3xl font-bold" style={{ color: isDarkMode ? themeColors.colors.pink[300] : themeColors.colors.pink[500] }}>
+                      ✓
+                    </span>
                   </div>
-                  <h3 className="text-center text-sm font-medium mb-2" style={{ color: isDarkMode ? themeColors.colors.pink[300] : themeColors.colors.pink[500] }}>
+                  <h3 className="text-center text-sm font-medium mb-1" style={{ color: isDarkMode ? themeColors.colors.pink[300] : themeColors.colors.pink[500] }}>
                     {credential.title}
                   </h3>
-                  <p className="text-center text-sm" style={{ color: isDarkMode ? themeColors.colors.dark[300] : themeColors.colors.dark[600] }}>
-                    {credential.subtitle || (credential.status === 'in-progress' ? 'In Progress!' : '')}
+                  <p className="text-center text-xs mb-2" style={{ color: isDarkMode ? themeColors.colors.dark[300] : themeColors.colors.dark[600] }}>
+                    {credential.subtitle}
+                  </p>
+                  <p className="text-center text-xs" style={{ color: isDarkMode ? themeColors.colors.dark[400] : themeColors.colors.dark[500] }}>
+                    {credential.issued}
                   </p>
                 </div>
               );
@@ -162,11 +81,11 @@ const Certifications = () => {
                   onFocus={(e) => e.currentTarget.blur()}
                   aria-label={`View ${credential.title} credential`}
                 >
-                  <BadgeComponent />
+                  <CredentialComponent />
                 </a>
               ) : (
                 <div key={credential.id} className="block">
-                  <BadgeComponent />
+                  <CredentialComponent />
                 </div>
               );
             })}

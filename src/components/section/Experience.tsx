@@ -28,17 +28,7 @@ const Experience = () => {
         ""
       ]
     },
-    {
-      title: "Your Job Title",
-      company: "Company Name",
-      location: "City, State",
-      period: "Month Year - Month Year",
-      description: [
-        "Description of your role and accomplishments",
-        "Another accomplishment or responsibility",
-        "One more key achievement",
-      ]
-    }
+    
   ];
 
   return (
