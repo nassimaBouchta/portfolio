@@ -24,7 +24,7 @@ const Experience = () => {
       description: [
         "Organization of events within the club, design of relevant and stimulating debate topics, and participation in promoting critical thinking.",
         "Participating in inter-university debate competitions, achieving remarkable results and strengthening the club's reputation within the academic community.",
-        "Organization of debate and public speaking workshops and orientation sessions for high school students",
+        "Organization of debate and public speaking workshops and orientation sessions for highschool students",
         
       ]
     },
