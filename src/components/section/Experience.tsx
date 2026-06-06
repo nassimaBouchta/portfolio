@@ -8,23 +8,23 @@ const Experience = () => {
   const themeColors = useThemeColors();
   const experiences = [
     {
-      title: "Responsable du développement et partenariat stratégique ",
+      title: "Head of Development and Strategic Partnership",
       company: "Hassania junior enterprise",
       location: "casablanca, Morocco",
-      period: "Septembre 2025 - Présent",
+      period: "September 2025 - Present",
       description: [
-        "Etablissement de partenariats stratégiques avec des entreprises locales et internationales pour favoriser la croissance de l'assosiation et la réalisation et le spnsoring de nos évenements tel que la journée entreprise élève, le Hult Prize, et d'autres évenements ",
+        "Establishment of strategic partnerships with local and international companies to promote the association's growth and the realization and sponsorship of our events such as the company-student day, the Hult Prize, and other events",
       ]
     },
     {
-      title: "debater at EHTP Great Debaters Club (English section)",
+      title: "Debater at EHTP Great Debaters Club (English section)",
       company: "EHTP great debaters club",
       location: "Casablanca, Morocco",
-      period: "Septembre 2025 - Présent",
+      period: "September 2025 - Present",
       description: [
-        "L'organisation des évenements au sein du club tel que Hayam et VEE (la Valse des Esprits Eclairés),conception de sujets de débat pertinents et stimulants, et la participation à promouvoir l'excellence en communication et en pensée critique.",
-        "Réussite dans la préparation et la participation à des compétitions de débat interuniversitaires, obtenant des résultats remarquables et renforçant la réputation du club au sein de la communauté académique.",
-        "Organisation de sessions de formation et d'orientation pour des lycéens, visant à améliorer leurs compétences en argumentation, en rhétorique et en prise de parole en public .",
+        "Organization of events within the club such as Hayam and VEE (the Waltz of Enlightened Spirits), design of relevant and stimulating debate topics, and participation in promoting excellence in communication and critical thinking.",
+        "Success in preparing and participating in inter-university debate competitions, achieving remarkable results and strengthening the club's reputation within the academic community.",
+        "Organization of training and orientation sessions for high school students, aimed at improving their skills in argumentation, rhetoric, and public speaking.",
         ""
       ]
     },
