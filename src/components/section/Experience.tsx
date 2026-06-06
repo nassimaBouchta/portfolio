@@ -8,12 +8,12 @@ const Experience = () => {
   const themeColors = useThemeColors();
   const experiences = [
     {
-      title: "Head of Development and Strategic Partnership",
+      title: "Partnerships and Strategic Development Coordinator",
       company: "Hassania junior enterprise",
       location: "casablanca, Morocco",
       period: "September 2025 - Present",
       description: [
-        "Establishment of strategic partnerships with local and international companies to promote the association's growth and the realization and sponsorship of our events such as the company-student day, the Hult Prize, and other events",
+        "Establishment of strategic partnerships with companies to promote the association's growth and sponsorship of our events (company-student day, the Hult Prize ...)",
       ]
     },
     {
@@ -22,10 +22,10 @@ const Experience = () => {
       location: "Casablanca, Morocco",
       period: "September 2025 - Present",
       description: [
-        "Organization of events within the club such as Hayam and VEE (the Waltz of Enlightened Spirits), design of relevant and stimulating debate topics, and participation in promoting excellence in communication and critical thinking.",
-        "Success in preparing and participating in inter-university debate competitions, achieving remarkable results and strengthening the club's reputation within the academic community.",
-        "Organization of training and orientation sessions for high school students, aimed at improving their skills in argumentation, rhetoric, and public speaking.",
-        ""
+        "Organization of events within the club, design of relevant and stimulating debate topics, and participation in promoting critical thinking.",
+        "Participating in inter-university debate competitions, achieving remarkable results and strengthening the club's reputation within the academic community.",
+        "Organization of debate and public speaking workshops and orientation sessions for high school students",
+        
       ]
     },
     

@@ -23,9 +23,9 @@ const About = () => {
   ];
 
   const profileImages = [
-    { src: profile1, caption: "photo 1" },
-    { src: profile2, caption: "photo 2" },
-    { src: profile3, caption: "photo 3" }
+    { src: profile1, caption: "Me participating in an orientation workshop for high school students" },
+    { src: profile2, caption: "Me debating as a third speaker in VEE competition" },
+    { src: profile3, caption: "Me debating as a second speaker in the finals of Invectus (ENCG Fes)" }
   ];
 
 
