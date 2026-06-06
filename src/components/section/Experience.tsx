@@ -24,7 +24,7 @@ const Experience = () => {
       description: [
         "L'organisation des évenements au sein du club tel que Hayam et VEE (la Valse des Esprits Eclairés),conception de sujets de débat pertinents et stimulants, et la participation à promouvoir l'excellence en communication et en pensée critique.",
         "Réussite dans la préparation et la participation à des compétitions de débat interuniversitaires, obtenant des résultats remarquables et renforçant la réputation du club au sein de la communauté académique.",
-        "Organisation de sessions de formation et d'orientation pour des lycéens, visant à améliorer leurs compétences en argumentation, en rhétorique et en prise de parole en public et leur donner  .",
+        "Organisation de sessions de formation et d'orientation pour des lycéens, visant à améliorer leurs compétences en argumentation, en rhétorique et en prise de parole en public .",
         ""
       ]
     },
